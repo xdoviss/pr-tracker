@@ -22,7 +22,13 @@ const pritem = ({ pr }) => {
         <Text style={styles.subText}>
           <Text style={{ fontWeight: '500' }}>{pr.weight}</Text> kg.
         </Text>
-        <Text style={{ fontStyle: 'italic', fontSize: 14 }}>
+        <Text
+          style={{
+            fontStyle: 'italic',
+            fontSize: 14,
+            color: '#F4F4FB',
+          }}
+        >
           {pr.date}
         </Text>
       </Pressable>
@@ -34,7 +40,7 @@ export default pritem;
 
 const styles = StyleSheet.create({
   itemCard: {
-    backgroundColor: '#fff',
+    backgroundColor: '#0A151A',
     width: '90%',
     padding: 20,
     marginVertical: 8,
@@ -50,6 +56,7 @@ const styles = StyleSheet.create({
   mainText: {
     fontSize: 18,
     fontWeight: 'bold',
+    color: '#F4F4FB',
   },
 
   subText: {
@@ -59,5 +66,6 @@ const styles = StyleSheet.create({
 
     fontSize: 18,
     fontStyle: 'italic',
+    color: '#F4F4FB',
   },
 });
